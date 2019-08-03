@@ -1,0 +1,33 @@
+> upx -o /tmp/chmod /bin/busybox
+                       Ultimate Packer for eXecutables
+                          Copyright (C) 1996 - 2018
+UPX 3.95        Markus Oberhumer, Laszlo Molnar & John Reiser   Aug 26th 2018
+
+        File size         Ratio      Format      Name
+   --------------------   ------   -----------   -----------
+    796240 ->    451332   56.68%   linux/amd64   chmod
+
+Packed 1 file.
+> /tmp/chmod
+BusyBox v1.29.3 (2019-01-24 07:45:07 UTC) multi-call binary.
+
+Usage: chmod [-Rcvf] MODE[,MODE]... FILE...
+
+Each MODE is one or more of the letters ugoa, one of the
+symbols +-= and one or more of the letters rwxst
+
+	-R	Recurse
+	-c	List changed files
+	-v	List all files
+	-f	Hide errors
+> /tmp/chmod 777 ORME.flag
+> ls -la
+total 12
+drwxrwxrwt    2 0        0               80 Jul 25 04:15 .
+drwxr-xr-x   20 0        0             4096 Jun 13 14:28 ..
+-rwxrwxrwx    1 1338     1338            33 Jul 25 04:15 ORME.flag
+-r--------    1 1338     1338            28 Jul 25 04:15 README.flag
+> iconv ORME.flag
+CTF{Th3r3_1s_4lw4y5_4N07h3r_W4y}
+> 
+

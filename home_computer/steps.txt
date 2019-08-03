@@ -1,0 +1,25 @@
+mount -t ntfs family.ntfs /mnt/family/
+
+root@kali:/mnt# cd family/
+root@kali:/mnt/family# ll
+total 24
+-rwxrwxrwx 1 root root     0 Jun 12 19:37  bootmgr
+-rwxrwxrwx 1 root root     0 Jun 12 19:37  BOOTNXT
+-rwxrwxrwx 1 root root     0 Jun 12 19:37  pagefile.sys
+drwxrwxrwx 1 root root  4096 Jun 12 19:37 'Program Files'
+drwxrwxrwx 1 root root  4096 Jun 12 19:37 'Program Files (x86)'
+-rwxrwxrwx 1 root root     0 Jun 12 19:37  Setup.log
+-rwxrwxrwx 1 root root     0 Jun 12 19:37  SSUUpdater.log
+-rwxrwxrwx 1 root root     0 Jun 12 19:37  swapfile.sys
+drwxrwxrwx 1 root root     0 Jun 12 19:37  Users
+drwxrwxrwx 1 root root 16384 Jun 12 19:38  Windows
+root@kali:/mnt/family# grep -r 'credentials' .
+./Users/Family/Documents/credentials.txt:I keep pictures of my credentials in extended attributes.
+
+
+root@kali:/mnt/family/Users/Family/Documents# getfattr --only-values credentials.txt -n user.FILE0 > file
+root@kali:/mnt/family/Users/Family/Documents# file file 
+file: PNG image data, 1234 x 339, 8-bit/color RGB, non-interlaced
+root@kali:/mnt/family/Users/Family/Documents# mv file file.png
+root@kali:/mnt/family/Users/Family/Documents# 
+

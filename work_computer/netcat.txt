@@ -1,0 +1,66 @@
+$ nc readme.ctfcompetition.com 1337
+> ll
+error: No such file or directory
+> pwd
+/challenge
+> ll
+error: No such file or directory
+> 
+> help
+Alien's shell
+Type program names and arguments, and hit enter.
+The following are built in:
+  cd
+  help
+  exit
+Use the man command for information on other programs.
+> ls 
+ORME.flag
+README.flag
+> pwd
+/challenge
+> ls
+ORME.flag
+README.flag
+> cat ORME.flag
+error: No such file or directory
+> ccat
+error: No such file or directory
+> cat
+error: No such file or directory
+> zip ORME.flag
+error: No such file or directory
+> pwd   
+/challenge
+> zip README.flag
+error: No such file or directory
+> tar README.flag
+tar: unrecognized option: R
+BusyBox v1.29.3 (2019-01-24 07:45:07 UTC) multi-call binary.
+
+Usage: tar c|x|t [-ZzJjahmvokO] [-f TARFILE] [-C DIR] [-T FILE] [-X FILE] [--exclude PATTERN]... [FILE]...
+
+Create, extract, or list files from a tar file
+
+	c	Create
+	x	Extract
+	t	List
+	-f FILE	Name of TARFILE ('-' for stdin/out)
+	-C DIR	Change to DIR before operation
+	-v	Verbose
+	-O	Extract to stdout
+	-m	Don't restore mtime
+	-o	Don't restore user:group
+	-k	Don't replace existing files
+	-Z	(De)compress using compress
+	-z	(De)compress using gzip
+	-J	(De)compress using xz
+	-j	(De)compress using bzip2
+	-a	(De)compress using lzma
+	-h	Follow symlinks
+	-T FILE	File with names to include
+	-X FILE	File with glob patterns to exclude
+	--exclude PATTERN	Glob pattern to exclude
+> tar c README.flag
+README.flag0000400000247200024720000000003413515415544010422 0ustar  13381338CTF{4ll_D474_5h4ll_B3_Fr33}
+

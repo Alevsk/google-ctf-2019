@@ -5,9 +5,9 @@ const too_fast = 'too fast';
 const closer = 'closer';
 const directions = [[1,0], [-1, 0], [0, 1], [0, -1]];
 
-let token = 'gAAAAABdRlrhB-r-vDUGnIto5JDCVr_tk-oVRMxKHqNzaLV0d06mUA_QoxINc3YF7_25lfRxUq_yy_kY_sXKR7-2Hncts-QjL6BXgQxAN_LIIq1l2h0DVLOnleupxDwwvb8df8moZ6vG';
-let lat = 51.6402;
-let long = 0.098;
+let token = 'gAAAAABdRm92XMLi7znF548k-NyMvH-tBIX5USH3-ZMDfyphU-dEXtr1fZAFOGo_1Urzq3Fw7sGkurFJeUe6K7aU8N-9JmAZvPNWgtNLGUWm1wAhZfpwRUDxARwOll3MctmoMx_cemZT';
+let lat = 51.49203;
+let long = -0.19285000000000452;
 let speed = 0.0001;
 let slp = 10;
 let i = 0;
@@ -81,16 +81,16 @@ const run = async () => {
 			case away: {
 				i += 1;
 				speed = 0.0001;
-				sleep(1);
+				sleep(0.5);
 				break;
 			}
 			case closer: {
-				speed = 0.00012;
-				sleep(10);
+				speed = 0.00015;
+				sleep(0.8);
 				break;
 			}
 			case too_fast: {
-				sleep(1)
+				sleep(0.5)
 				break;
 			}
 			default:
